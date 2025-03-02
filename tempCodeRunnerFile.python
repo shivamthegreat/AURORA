@@ -1,0 +1,45 @@
+class Base:
+    def __init__(self):
+        self.name = "sju"
+    def display(self):
+        print(self.name)
+class Derived(Base):
+    def disp(self):
+        print("Derived class")
+ob1=Derived()
+ob1.display()        
+
+
+#class myclass:
+    #def __init__(self,x,y):
+        #self.x=x
+        #self.y=y
+    #def disp(self):
+        #return self.x,self.y 
+    #def __del__(self):
+        #print('Destroyed')
+#o1=myclass(input("enter 1 string: "),input("enter number: "))
+#o2=myclass(input("enter 2 string: "),input("enter number: "))
+#print(o1.disp())
+#print(o2.disp())
+#del(o1)
+#
+
+class Employee:
+    empcount=0
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+        Employee.empcount+=1
+    def displayCount(self):
+        print("Total Employee %d" % Employee.empCount)
+    def displayEmploee(self):
+        print("name:",self.name,"Salary:",self.salary) 
+emp1=Employee('ironman',20)
+emp2=Employee('spiderman',10)
+emp1.displayEmploee()
+emp2.displayEmploee()
+#print("total employee %d" % Employee.empCount)        
+        
+
+
